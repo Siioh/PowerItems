@@ -1,0 +1,73 @@
+name: PowerItems
+main: com.gmail.ramsarrantyler.PowerItems
+version: 1.1
+
+commands:
+   ender:
+      description: Allows you to view your ender chest.
+      usage: /<command>
+      permission: PowerItems.ender
+      permission-message: You don’t have the required permission.
+   mod:
+      description: Toggles mod mode.
+      usage: /<command>
+      permission: PowerItems.modtoggle
+      permission-message: You don’t have the required permission.
+   coord:
+      description: Gives the coordinates of the block you are looking at.
+      usage: /<command>
+      permission: PowerItems.coord
+      permission-message: You don't have the required permission.
+   pireload:
+      description: Reloads PowerItems configuration files.
+      usage: /<command>
+      permission: PowerItems.reload
+      permission-message: You don't have the required permission.
+   fly:
+      description: Toggles fly for the player who typed the command.
+      usage: /<command>
+      permission: PowerItems.fly
+      permission-message: You don’t have the required permission.
+   doublejump:
+      description: Toggles double jump for the user.
+      usage: /<command>
+      permission: PowerItems.doublejumptoggle
+      permission-message: You don’t have the required permission.
+permissions:
+   PowerItems.*:
+      description: Access to all permissions of PowerItems.
+      children:
+          PowerItems.lightning: true
+          PowerItems.throwfireball: true
+          PowerItems.throwtnt: true
+          PowerItems.directory: true
+          PowerItems.sniper: true
+          PowerItems.machine: true
+          PowerItems.wither: true
+          PowerItems.tntbow: true
+   PowerItems.lightning:
+      description: Able to use the lightning item.
+   PowerItems.throwfireball:
+      description: The power to throw fireballs like ghasts/dispensers.
+   PowerItems.throwtnt:
+      description: Throwing TNT, almost like a grenade.
+   PowerItems.directory:
+      description: Permission to use the compass as the directory for teleportation.
+   PowerItems.sniper:
+      description: The ability to use the Sniper Bow.
+   PowerItems.machine:
+      description: The ability to use the Machine Bow.
+   PowerItems.wither:
+      description: The ability to use the Wither Bow.
+   PowerItems.tntbow:
+      description: The ability to use the TNT Bow.
+   PowerItems.shotbow:
+      description: The ability to use the Shot Bow.
+   PowerItems.mod:
+      description: Set if the player is in mod mode (only for plugins use).
+   PowerItems.doublejump:
+      description: The power to jump, twice (only for plugin use).
+   PowerItems.nofall:
+      description: Take no fall damage (only for plugin use).
+   PowerItems.previous_doublejump:
+      description: Detects double jump setting in mod mode (only for plugin use).

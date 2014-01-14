@@ -1,0 +1,41 @@
+# Siioh's PowerItems configuration file
+
+# How to use:
+# You can set the name of the item for it to work.
+# Any other name than what you set will not shoot arrows as the bow would.
+# Use http://www.minecraftwiki.net/wiki/Formatting_codes for color codes.
+
+# The latter set of configurations require integer inputs, they tell the program where to TP the people who
+# click the items within the directory. This must be in the same world.
+# Example:
+
+# Slot 1 X: 0
+# Slot 1 Y: 4
+# Slot 1 Z: 0
+
+# This example would sent the player that clicked the first item in the
+# directory to the coordinates 0, 4, 0.
+
+Machine Bow: Machine Bow
+Sniper Bow: Sniper Bow
+Throwable Fire Charge: Fire Charge
+Wither Bow: Wither Bow
+Shot Bow: Shot Bow
+TNT Bow: TNT Bow
+Slot 1 X: 0
+Slot 1 Y: 0
+Slot 1 Z: 0
+Slot 2 X: 0
+Slot 2 Y: 0
+Slot 2 Z: 0
+Slot 3 X: 0
+Slot 3 Y: 0
+Slot 3 Z: 0
+Slot 4 X: 0
+Slot 4 Y: 0
+Slot 4 Z: 0
+Slot 5 X: 0
+Slot 5 Y: 0
+Slot 5 Z: 0
+Double Jump: false
+Fly: true
