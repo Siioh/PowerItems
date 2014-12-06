@@ -3,6 +3,21 @@ main: com.gmail.ramsarrantyler.PowerItems
 version: 1.1
 
 commands:
+   hub:
+      description: Teleports you to the hub.
+      usage: /<command>
+      permissions: PowerItems.hub
+      permissions-message: You don’t have the required permission.
+   location:
+      description: Tells you your pitch and yaw.
+      usage: /<command>
+      permissions: PowerItems.location
+      permissions-message: You don’t have the required permission.
+   particle:
+      description: Toggles particle effects for the sender.
+      usage: /<command>
+      permissions: PowerItems.particletoggle
+      permissions-message: You don’t have the required permission.
    ender:
       description: Allows you to view your ender chest.
       usage: /<command>
@@ -23,11 +38,6 @@ commands:
       usage: /<command>
       permission: PowerItems.reload
       permission-message: You don't have the required permission.
-   fly:
-      description: Toggles fly for the player who typed the command.
-      usage: /<command>
-      permission: PowerItems.fly
-      permission-message: You don’t have the required permission.
    doublejump:
       description: Toggles double jump for the user.
       usage: /<command>
@@ -36,15 +46,6 @@ commands:
 permissions:
    PowerItems.*:
       description: Access to all permissions of PowerItems.
-      children:
-          PowerItems.lightning: true
-          PowerItems.throwfireball: true
-          PowerItems.throwtnt: true
-          PowerItems.directory: true
-          PowerItems.sniper: true
-          PowerItems.machine: true
-          PowerItems.wither: true
-          PowerItems.tntbow: true
    PowerItems.lightning:
       description: Able to use the lightning item.
    PowerItems.throwfireball:
@@ -63,11 +64,9 @@ permissions:
       description: The ability to use the TNT Bow.
    PowerItems.shotbow:
       description: The ability to use the Shot Bow.
-   PowerItems.mod:
-      description: Set if the player is in mod mode (only for plugins use).
-   PowerItems.doublejump:
-      description: The power to jump, twice (only for plugin use).
-   PowerItems.nofall:
-      description: Take no fall damage (only for plugin use).
-   PowerItems.previous_doublejump:
-      description: Detects double jump setting in mod mode (only for plugin use).
+   PowerItems.location:
+      description: Tells you your pitch and yaw.
+   PowerItems.blazeball:
+      description: Allows you to shoot fireballs with a blaze rod.
+   PowerItems.enderbow:
+      description: Shoots an ender pearl from your bow.
